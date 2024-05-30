@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurante Italiano</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <h1>BENVENUTI A MAMMA MIA</h1>
+    <div class="contenedor">
+        
+        <header>
+            <nav>
+                <ul>
+                    <li><a href="#mision-vision">MISSIONE E VISIONE</a></li>
+                    <li><a href="#galeria">PIATTI PRINCIPALI</a></li>
+                    <li><a href="#menu">MENU</a></li>
+                    <li><a href="#reservas">PRENOTAZIONI</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            
+            <section id="mision-vision">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>MISSIONE</th>
+                            <th>VISIONE</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Nel nostro ristorante, ci impegniamo a offrire un'esperienza culinaria eccezionale per soddisfare tutti i gusti e le età. 
+                                Ci sforziamo di deliziare i nostri clienti con una vasta gamma di piatti preparati con ingredienti freschi e di alta qualità, mescolando sapori di diverse culture per creare un'esperienza gastronomica unica.
+                            </td>
+                            <td>Ci vediamo come la destinazione gastronomica preferita dalle famiglie e gruppi di amici, dove possono godere di un'ampia gamma di opzioni culinarie in un ambiente rilassato e accogliente. 
+                                Vogliamo essere riconosciuti per l'eccellenza nella qualità del cibo, la creatività nella presentazione dei piatti e la cordialità del nostro servizio.</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+
+			<section id="menu">
+                <h2>MENU</h2>
+                <ul>
+                    <li>Pasta Carbonara: $12</li>
+                    <li>Pizza Margherita: $15</li>
+                    <li>Tiramisú: $7</li>
+                    <li>Risotto ai Funghi: $18</li>
+                    <li>Gelato Italiano: $6</li>
+                    <li>Bruschetta: $8</li>
+                </ul>
+            </section>
+
+            <section id="galeria">
+                <div class="galeria">
+                <img src="../img/Pasta.png" alt="Pasta Carbonara">
+                <img src="../img/Pizza.png" alt="Pizza Margherita">
+                <img src="../img/Tiramisu.jpg" alt="Tiramisú">
+                </div>
+                <div class="galeria">
+                <img src="../img/Risotto.png" alt="Risotto ai Funghi">
+                <img src="../img/Gelato.png" alt="Gelato Italiano">
+                <img src="../img/Bruschetta.jpeg" alt="Bruschetta">
+                </div>
+            </section>
+
+            <section id="reservas">
+                <h2>PRENOTAZIONI</h2>
+                <form action="procesar.php" method="post">
+                    <label for="nombre">Nome:</label>
+                    <input type="text" id="nombre" name="nombre" required>
+
+                    <label for="numero-personas">Numero di persone per tavolo:</label>
+                    <input type="text" id="numero-personas" name="numero-personas" required>
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="mensaje">Specificazioni:</label>
+                    <textarea id="mensaje" name="mensaje" rows="5" cols="30" required></textarea>
+
+                    <button type="submit">Inviare</button>
+                </form>
+            </section>
+
+        </main>
+    </div>
+    
+    <footer>
+        <div class="footer-content">
+        <a href="https://www.facebook.com/">
+            <!-- Iconos de redes sociales aquí -->
+        </a>
+        <p>&copy; Cucina Italiana 2024</p>
+    </div>
+    </footer>
+
+</body>
+</html>
